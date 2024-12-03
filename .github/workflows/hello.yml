@@ -1,8 +1,8 @@
 name: Hello # ワークフロー名
 on: push
 jobs:
-  hello: # Job id
-    runs-on:ubuntu-latest
+  hello: #Job id
+    runs-on: ubuntu-latest
   steps:
-    -run:echo "Hello, world" # shell command
-    -uses:actions/checkout@v4 # actionの呼び出し
+    - run: echo "Hello, world" # shell command
+    - uses: actions/checkout@v4 # actionの呼び出し
